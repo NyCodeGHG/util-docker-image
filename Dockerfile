@@ -1,5 +1,5 @@
 FROM ubuntu
 
-RUN apt install bash curl
+RUN apt update && apt install bash curl iputils-ping
 
 ENTRYPOINT [ "bash" ]
